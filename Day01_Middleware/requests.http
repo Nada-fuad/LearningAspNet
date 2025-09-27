@@ -1,0 +1,13 @@
+﻿@baseUrl= https://localhost:7276
+
+
+
+
+###
+GET {{baseUrl}}
+
+###
+GET {{baseUrl}}/branch2
+
+###
+GET {{baseUrl}}/process?mood=new
