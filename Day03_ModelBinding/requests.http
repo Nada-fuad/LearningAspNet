@@ -1,0 +1,8 @@
+@baseUrl=https://localhost:7172
+
+
+###
+GET {{baseUrl}}/products/4
+
+###
+GET {{baseUrl}}/products/controller/4

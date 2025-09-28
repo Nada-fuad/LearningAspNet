@@ -11,3 +11,6 @@ GET {{baseUrl}}/branch2
 
 ###
 GET {{baseUrl}}/process?mood=new
+
+###
+GET {{baseUrl}}/usewhen

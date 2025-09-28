@@ -1,0 +1,49 @@
+﻿@baseURL=https://localhost:7219
+
+
+GET {{baseURL}}/oo
+###
+GET {{baseURL}}/products/controller
+
+
+
+#####
+GET {{baseURL}}/products-minimal
+
+###
+GET {{baseURL}}/route-table
+
+###
+GET {{baseURL}}/product-route
+
+###
+GET {{baseURL}}/products/p/9
+
+###
+GET {{baseURL}}/products/date/9/05/2202
+
+
+###
+GET {{baseURL}}/order/3
+
+###
+GET {{baseURL}}/slug/kk/mok
+
+###
+GET {{baseURL}}/month/44
+
+###
+GET {{baseURL}}/generate/order?id=10
+
+
+###
+GET {{baseUrl}}/order/o/5
+
+
+
+
+####
+GET {{baseUrl}}/book/My%Book%Is%Big
+
+###
+GET {{baseUrl}}/generate
