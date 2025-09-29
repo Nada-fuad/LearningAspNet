@@ -14,5 +14,13 @@ namespace Day03_ModelBinding.Controllers
 
             return Ok($"products from controller:{id} ");
         }
+
+        [HttpPost("body-xml-controller")]
+          public IActionResult postXml(Product product)
+        {
+         
+                return Ok(product);
+            
+        }
     }
 }

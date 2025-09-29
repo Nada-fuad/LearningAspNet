@@ -6,3 +6,72 @@ GET {{baseUrl}}/products/4
 
 ###
 GET {{baseUrl}}/products/controller/4
+
+
+
+####
+GET {{baseUrl}}/products-minimal?name=laptop&price=12.5
+
+
+####
+GET {{baseUrl}}/products/details?page=10&pageSize=3
+
+
+###
+GET {{baseUrl}}/search-request?id=1&name=laptop&description=new
+
+
+###
+GET {{baseUrl}}/array?ids=2&ids=4&ids=10
+
+
+###
+
+GET  {{baseUrl}}/date-rang?query=2022-10-16,2025-09-29
+
+
+###
+POST {{baseUrl}}/form-minimal
+Content-Type:application/x-www-form-urlencoded
+
+
+
+name=laptop&price=12.5
+
+###
+
+POST {{baseUrl}}/upload-minimal
+Content-Type: multipart/form-data; boundary=MyBoundary
+
+--MyBoundary
+Content-Disposition: form-data; name="file"; filename="invoice.png"
+Content-Type: image/png
+
+< C:/Users/alsai/Desktop/invoice.png
+--MyBoundary--
+
+
+###
+POST {{baseUrl}}/body-minimal
+Content-Type: application/json
+
+{
+    "name":"laptop",
+    "price":12
+}
+###
+POST {{baseUrl}}/products/body-xml-controller
+Content-Type: application/xml
+Accept: application/xml
+
+
+
+<Product>
+    <Name>laptop</Name>
+    <Price>12</Price>
+</Product>
+
+
+####
+GET {{baseUrl}}/cookie-minimal
+Cookie: theme=dark;language=En;timeZone=America
