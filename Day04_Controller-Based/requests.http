@@ -1,0 +1,55 @@
+
+@baseUrl=https://localhost:7013
+@productId=11111111-1111-1111-1111-111111111111
+@jobId = 11084ed7-64ae-4326-a041-bd64c5e41edb
+
+###
+OPTIONS {{baseUrl}}/api/products/
+
+
+###
+HEAD {{baseUrl}}/api/products/{{productId}}
+
+###
+GET {{baseUrl}}/api/products/{{productId}}?includeReviews=true
+
+
+###
+GET {{baseUrl}}/api/products?page=1&pageSize=10
+
+###
+POST {{baseUrl}}/api/products
+Content-Type: application/json
+
+{
+    "name":"kypoeard",
+    "price":45.66
+}
+###
+PUT {{baseUrl}}/api/products/{{productId}}
+Content-Type: application/json
+
+{
+    "name":"Iphone",
+    "price":3.5
+}
+
+###
+DELETE {{baseUrl}}/api/products/{{productId}}
+
+####
+POST {{baseUrl}}/api/products/process
+
+
+###
+GET {{baseUrl}}/api/products/status/{{jobId}}
+
+###
+GET {{baseUrl}}/api/products/csv
+
+###
+GET {{baseUrl}}/api/products/physical-csv-file
+
+
+###
+GET {{baseUrl}}/api/products/redirect-legacy
