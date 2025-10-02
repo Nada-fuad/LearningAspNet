@@ -1,0 +1,33 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+@baseUrl=https://localhost:7164
+@productId=2779ee47-10b0-4bd7-8342-404006aa1392
+
+
+###
+GET {{baseUrl}}/api/v1/products/{{productId}}
+
+###
+GET {{baseUrl}}/api/v2/products/{{productId}}
+
+####
+GET {{baseUrl}}/api/products/{{productId}}?api-version=1.0
+
+
+###
+GET {{baseUrl}}/api/products/{{productId}}?api-version=2.0
+###
+GET {{baseUrl}}/api/products/{{productId}}
+api-version: 1.0
+
+###9
+GET {{baseUrl}}/api/products/{{productId}}
+api-version:2.0
+
+
+###
+GET {{baseUrl}}/api/products/{{productId}}
+Accept: application/json;v=1;
+###9
+GET {{baseUrl}}/api/products/{{productId}}
+Accept: application/json;v=1;
+
